@@ -1,0 +1,10 @@
+1. 下载 zip 文件，这里使用 RASPBIAN JESSIE LITE July 2017
+    下载地址：https://www.raspberrypi.org/downloads/raspbian/
+2. 解压 zip 文件 得到 img 文件 需要使用 （Unarchiver MacOS）
+3. 确认 SD卡 为 FAT32 格式
+4. diskutil list 找到对应的 dev/disk<n> 
+5. sudo dd bs=1m if=image.img of=/dev/rdisk<disk# from diskutil> conv=sync 将 img 写入 SD卡
+
+参考链接
+https://www.raspberrypi.org/downloads/raspbian/
+https://www.raspberrypi.org/documentation/installation/installing-images/mac.md

@@ -1,0 +1,16 @@
+1. 网线连接设备
+2. 从路由器列表获取设备 ip 地址
+3. ssh pi@<ip address>
+4. cat /etc/network/interfaces 获取 wlan0 配置文件（/etc/wpa_supplicant/wpa_supplicant.conf）
+5. /etc/wpa_supplicant/wpa_supplicant.conf 添加 
+    network={
+      ssid="网络名"
+      key_mgmt=加密方式
+      psk="密码"
+    }
+6. sudo ifdown wlan0
+7. sudo ifup wlan0  (获取 wlan0 ip 地址成功)
+
+参考链接：
+http://shumeipai.nxez.com/2016/09/17/raspberry-pi-set-up-a-wireless-internet-access.html
+http://www.linuxidc.com/Linux/2014-10/107546.htm

@@ -2,6 +2,10 @@ sudo apt-get install myplayer2
 wget 音乐地址 
 alsamixer 调节音量
 
+
+参考链接：
+http://blog.lxx1.com/1923
+
 ---------------
 其他：
 1. apt-get update 软件源 /etc/apt/source.list

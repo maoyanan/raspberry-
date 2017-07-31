@@ -1,2 +1,14 @@
 第三方资源：
 http://tts.baidu.com/text2audio?lan=zh&ie=UTF-8&text= 文字
+
+code
+
+import os
+
+def text2voice(text):
+        url = 'http://tts.baidu.com/text2audio?lan=zh&ie=UTF-8&text= ' + text
+        os.system('mplayer "%s"' % url)
+
+if __name__ == '__main__':
+        text = "?~S~H?~S~H?~S~H?~S~H?~S~H"
+        text2voice(text)                                                                       
